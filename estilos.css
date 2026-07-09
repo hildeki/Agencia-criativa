@@ -1,11 +1,13 @@
-/* Reset básico */
+/* =========================
+   Reset e estilos globais
+========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Configurações globais */
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -24,25 +26,51 @@ img {
   display: block;
 }
 
-section {
+.section {
   padding: 5rem 8%;
 }
 
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-}
-
-h2 {
+.section__title {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
   color: #111827;
 }
 
-/* Cabeçalho */
-.cabecalho {
+/* =========================
+   Componentes reutilizáveis
+========================= */
+
+.button {
+  display: inline-block;
+  padding: 0.9rem 1.6rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button--primary {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: #3730a3;
+  transform: translateY(-0.2rem);
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   Header
+========================= */
+
+.header {
   width: 100%;
   padding: 1.2rem 8%;
   background-color: #ffffff;
@@ -56,31 +84,35 @@ h2 {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.08);
 }
 
-.logo {
+.header__logo {
   font-size: 1.3rem;
   font-weight: bold;
   color: #4f46e5;
 }
 
-.menu {
+.header__nav {
   display: flex;
   gap: 1.5rem;
 }
 
-.menu a {
+.header__link {
   text-decoration: none;
   color: #374151;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.menu a:hover {
+.header__link:hover {
   color: #4f46e5;
 }
 
-/* Home */
-.home {
+/* =========================
+   Hero
+========================= */
+
+.hero {
   min-height: 90vh;
+  padding: 5rem 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,167 +120,153 @@ h2 {
   background: linear-gradient(135deg, #eef2ff, #f8f9fc);
 }
 
-.home-conteudo {
+.hero__content,
+.hero__image-wrapper {
   flex: 1;
 }
 
-.home-conteudo h1 {
+.hero__title {
   font-size: clamp(2.2rem, 5vw, 4rem);
   color: #111827;
   margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
-.home-conteudo p {
+.hero__text {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   max-width: 38rem;
   color: #4b5563;
 }
 
-.botao {
-  display: inline-block;
-  padding: 0.9rem 1.6rem;
-  background-color: #4f46e5;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 2rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.botao:hover {
-  background-color: #3730a3;
-  transform: translateY(-0.2rem);
-}
-
-.home picture {
-  flex: 1;
-}
-
-.home img {
+.hero__image {
   border-radius: 1.5rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
 }
 
-/* Sobre */
-.sobre {
+/* =========================
+   About
+========================= */
+
+.about {
   background-color: #ffffff;
 }
 
-.sobre > p {
+.about__text {
   max-width: 50rem;
   margin: 0 auto 3rem;
   text-align: center;
   color: #4b5563;
 }
 
-.valores {
+.about__values {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
 }
 
-.valores article {
+.about__card {
   flex: 1;
-  padding: 2rem;
   background-color: #f8f9fc;
-  border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
 }
 
-.valores h3 {
+.about__card-title {
   margin-bottom: 0.8rem;
   color: #4f46e5;
 }
 
-/* Serviços com CSS Grid */
-.servicos {
+/* =========================
+   Services
+========================= */
+
+.services {
   background-color: #f8f9fc;
 }
 
-.grade-servicos {
+.services__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
-.card-servico {
+.services__card {
   background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease;
 }
 
-.card-servico:hover {
+.services__card:hover {
   transform: translateY(-0.4rem);
 }
 
-.card-servico h3 {
+.services__card-title {
   margin-bottom: 1rem;
   color: #4f46e5;
 }
 
-/* Depoimentos */
-.depoimentos {
+/* =========================
+   Testimonials
+========================= */
+
+.testimonials {
   background-color: #ffffff;
 }
 
-.lista-depoimentos {
+.testimonials__list {
   display: flex;
   gap: 1.5rem;
 }
 
-.depoimento {
+.testimonials__card {
   flex: 1;
-  padding: 2rem;
   background-color: #eef2ff;
-  border-radius: 1rem;
 }
 
-.depoimento p {
+.testimonials__text {
   margin-bottom: 1rem;
   font-style: italic;
   color: #374151;
 }
 
-.depoimento h3 {
+.testimonials__author {
   color: #111827;
 }
 
-/* Contato */
-.contato {
+/* =========================
+   Contact
+========================= */
+
+.contact {
   background-color: #f8f9fc;
 }
 
-.contato-conteudo {
+.contact__content {
   display: flex;
   gap: 3rem;
   align-items: flex-start;
 }
 
-.contato-info,
-.formulario-contato {
+.contact__info,
+.contact__form {
   flex: 1;
 }
 
-.contato-info p {
+.contact__info-text {
   margin-bottom: 1rem;
 }
 
-.formulario-contato {
+.contact__form {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
-.formulario-contato label {
+.contact__label {
   font-weight: bold;
 }
 
-.formulario-contato input,
-.formulario-contato textarea {
+.contact__input,
+.contact__textarea {
   width: 100%;
   padding: 0.9rem;
   border: 0.1rem solid #d1d5db;
@@ -257,13 +275,13 @@ h2 {
   font-family: inherit;
 }
 
-.formulario-contato input:focus,
-.formulario-contato textarea:focus {
+.contact__input:focus,
+.contact__textarea:focus {
   outline: none;
   border-color: #4f46e5;
 }
 
-.formulario-contato button {
+.contact__button {
   margin-top: 1rem;
   padding: 0.9rem;
   border: none;
@@ -276,78 +294,83 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-.formulario-contato button:hover {
+.contact__button:hover {
   background-color: #3730a3;
 }
 
-/* Rodapé */
-.rodape {
+/* =========================
+   Footer
+========================= */
+
+.footer {
   padding: 1.5rem 8%;
   background-color: #111827;
   color: #ffffff;
   text-align: center;
 }
 
-/* Responsividade para tablets */
+/* =========================
+   Responsividade
+========================= */
+
 @media (max-width: 1024px) {
-  .home {
+  .hero {
     flex-direction: column;
     text-align: center;
   }
 
-  .home-conteudo p {
+  .hero__text {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .grade-servicos {
+  .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .valores,
-  .lista-depoimentos,
-  .contato-conteudo {
+  .about__values,
+  .testimonials__list,
+  .contact__content {
     flex-direction: column;
   }
 }
 
-/* Responsividade para celulares */
 @media (max-width: 600px) {
   html {
     font-size: 15px;
   }
 
-  section {
+  .section,
+  .hero {
     padding: 4rem 6%;
   }
 
-  .cabecalho {
+  .header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .menu {
+  .header__nav {
     width: 100%;
     flex-direction: column;
     gap: 0.8rem;
   }
 
-  .menu a {
+  .header__link {
     width: 100%;
     padding: 0.6rem 0;
     border-bottom: 0.1rem solid #e5e7eb;
   }
 
-  .home {
+  .hero {
     min-height: auto;
-    padding-top: 4rem;
   }
 
-  .grade-servicos {
+  .services__grid {
     grid-template-columns: 1fr;
   }
 
-  h2 {
+  .section__title {
     font-size: 1.7rem;
   }
 }
