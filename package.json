@@ -1,0 +1,24 @@
+{
+  "name": "agencia-criativa",
+  "version": "1.0.0",
+  "description": "Landing page responsiva desenvolvida como projeto de estudo do curso Full Stack JavaScript da EBAC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hildeki/Agencia-criativa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hildeki/Agencia-criativa/issues"
+  },
+  "homepage": "https://github.com/hildeki/Agencia-criativa#readme",
+  "devDependencies": {
+    "sass": "^1.104.1"
+  }
+}
