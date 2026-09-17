@@ -4,8 +4,9 @@
   "description": "Landing page responsiva desenvolvida como projeto de estudo do curso Full Stack JavaScript da EBAC.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "sass": "sass scss/estilos.scss css/estilos.css",
+  "sass:watch": "sass --watch scss/estilos.scss css/estilos.css"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hildeki/Agencia-criativa.git"
