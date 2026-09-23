@@ -1,0 +1,24 @@
+@use 'variaveis' as v;
+
+// Mixin para layouts com Flexbox
+@mixin flex(
+    $justify: flex-start,
+    $align: stretch,
+    $gap: 0,
+    $direction: row
+) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+// Mixin para estilo base de botões
+@mixin botao-base {
+    border-radius: 2rem;
+    font-weight: bold;
+    background-color: v.$cor-primaria;
+    color: v.$cor-branca;
+    transition: background-color 0.3s ease;
+}

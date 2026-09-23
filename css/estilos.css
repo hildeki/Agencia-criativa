@@ -22,4 +22,70 @@ img {
   display: block;
 }
 
+.header {
+  width: 100%;
+  padding: 1.2rem 8%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.08);
+}
+.header__logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4f46e5;
+}
+.header__nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1.5rem;
+  flex-direction: row;
+}
+.header__link {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.header__link:hover {
+  color: #4f46e5;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 5rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-direction: row;
+  background: linear-gradient(135deg, #eef2ff, #f8f9fc);
+}
+.hero__content, .hero__image-wrapper {
+  flex: 1;
+}
+.hero__title {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  color: #111827;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+.hero__text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 38rem;
+  color: #4b5563;
+}
+.hero__image {
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+}
+
 /*# sourceMappingURL=estilos.css.map */
