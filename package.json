@@ -4,9 +4,9 @@
   "description": "Landing page responsiva desenvolvida como projeto de estudo do curso Full Stack JavaScript da EBAC.",
   "main": "index.js",
   "scripts": {
-  "sass": "sass scss/estilos.scss css/estilos.css",
-  "sass:watch": "sass --watch scss/estilos.scss css/estilos.css"
-},
+    "sass": "sass scss/estilos.scss css/estilos.css",
+    "sass:watch": "sass --watch scss/estilos.scss css/estilos.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hildeki/Agencia-criativa.git"
@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/hildeki/Agencia-criativa#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
     "sass": "^1.104.1"
   }
 }
