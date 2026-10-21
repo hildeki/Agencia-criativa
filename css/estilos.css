@@ -88,4 +88,30 @@ img {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
 }
 
+.about {
+  background-color: #ffffff;
+}
+.about__text {
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: #4b5563;
+}
+.about__values {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  flex-direction: row;
+}
+.about__card {
+  flex: 1;
+  background-color: #f8f9fc;
+  text-align: center;
+}
+.about__card-title {
+  margin-bottom: 0.8rem;
+  color: #4f46e5;
+}
+
 /*# sourceMappingURL=estilos.css.map */
